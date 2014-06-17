@@ -1,0 +1,926 @@
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+.royalSlider {
+	position: relative;
+	direction: ltr;
+}
+.royalSlider > * {
+	float: left;
+}
+
+.rsWebkit3d .rsSlide {
+	-webkit-transform: translateZ(0);
+}
+
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+	-webkit-backface-visibility: hidden;
+}
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+    -webkit-transform: none;
+}
+.rsOverflow {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/* overflow: hidden; */
+	float: left;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap .rsOverflow {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.rsContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.rsArrow,
+.rsThumbsArrow {
+	cursor: pointer;
+}
+
+.rsThumb {
+	float: left;
+	position: relative;
+}
+
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+	opacity: 1;
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
+}
+.rsHidden {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+
+.rsGCaption {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+	position: fixed !important;
+	height: auto !important;
+	width: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	z-index: 2147483647 !important;
+	top: 0 !important;
+	left: 0 !important;
+	bottom: 0 !important;
+	right: 0 !important;
+}
+
+.royalSlider .rsSlide.rsFakePreloader {
+	opacity: 1 !important;
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition:  0s;
+	transition:  0s;
+	display: none;
+}
+
+.rsSlide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	/* overflow: hidden; */
+	
+	height: 100%;
+	width: 100%;
+}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+	height: auto;
+}
+
+.rsContent {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.rsPreloader {
+	position:absolute;
+	z-index: 0;	
+}
+
+.rsNav {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.rsNavItem {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.25);
+}
+
+.rsThumbs {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	z-index: 22;
+}
+.rsTabs {
+	float: left;
+	background: none !important;
+}
+.rsTabs,
+.rsThumbs {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+
+.rsVideoContainer {
+	/*left: 0;
+	top: 0;
+	position: absolute;*/
+	/*width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	float: left;*/
+	width: auto;
+	height: auto;
+	line-height: 0;
+	position: relative;
+}
+.rsVideoFrameHolder {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #141414;
+	opacity: 0;
+	-webkit-transition: .3s;
+}
+.rsVideoFrameHolder.rsVideoActive {
+	opacity: 1;
+}
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+	position: absolute;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 44px;
+}
+
+.rsABlock {
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 15;
+	
+}
+
+img.rsImg {
+	max-width: none;
+}
+
+.grab-cursor {
+	}
+
+.grabbing-cursor{ 
+	}
+
+.rsNoDrag {
+	cursor: auto;
+}
+
+.rsLink {
+	left:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:block;	
+	z-index: 20;
+}
+
+
+/******************************
+*
+*  RoyalSlider Default Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.rsDefault,
+.rsDefault .rsOverflow,
+.rsDefault .rsSlide,
+.rsDefault .rsVideoFrameHolder,
+.rsDefault .rsThumbs {
+
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsDefault .rsArrow {
+	height: 100%;
+	width: 44px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+.rsDefault.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+	
+}
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:0; }
+
+.rsDefault .rsArrowIcn {		
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;	
+	margin-left: -16px;
+
+	position: absolute;	
+	cursor: pointer;	
+	background: url('../images/rs-defau.png');
+
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	
+	border-radius: 2px;
+}
+.rsDefault .rsArrowIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsDefault .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsDefault .rsBullets {
+	position: absolute;
+	z-index: 35;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	margin: 0 auto; 
+
+	background: #000;
+	background: rgba(0,0,0,0.75);
+
+	text-align: center;
+	line-height: 8px;
+	overflow: hidden;
+}
+.rsDefault .rsBullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px;
+}
+.rsDefault .rsBullet span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #777;
+	background: rgba(255,255,255,0.5);
+}
+.rsDefault .rsBullet.rsNavSelected span {
+	background-color: #FFF;
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsDefault .rsThumbsHor {
+	width: 100%;
+	height: 72px;
+}
+.rsDefault .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rsDefault.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+}
+.rsDefault.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.rsDefault .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 160px;
+	height: 104px;
+	padding:0 0 0 32px;
+}
+.rsDefault .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.rsDefault .rsThumb.rsNavSelected {
+	
+}
+.rsDefault .rsThumb.rsNavSelected img {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.rsDefault .rsTmb {
+	padding:0 10px 0 45px;
+	margin:18px 0 0 0;
+	position:relative;
+	display:block;
+	font-size:13px;
+	line-height:20px;
+	color:#303847;
+}
+
+/* Thumbnails with text */
+.rsDefault .rsTmb h5 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	color: #FFF;
+}
+.rsDefault .rsTmb span {
+	border-bottom:1px solid #ffcc00;
+}
+
+
+
+/* Thumbnails arrow icons */
+.rsDefault .rsThumbsArrow {
+
+}
+.rsDefault .rsThumbsArrow:hover {
+	
+}
+.rsDefault.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsDefault .rsThumbsArrowIcn {		
+	
+}
+
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsDefault .rsThumbsArrowDisabled {  }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.rsDefault .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsDefault .rsThumbsHor {
+		height: 44px;
+	}
+	.rsDefault .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsDefault .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
+}
+.rsDefault .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	border-right: 1px solid #f5f5f5;
+	text-decoration: none;
+
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	-webkit-box-shadow: inset 1px 0 0 #fff;
+	box-shadow: inset 1px 0 0 #fff;
+
+	*display:inline; 
+	*zoom:1;
+}
+.rsDefault .rsTab:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.rsDefault .rsTab:last-child { 
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	border-right:  1px solid #cfcfcf;
+}
+.rsDefault .rsTab:active { 
+	border: 1px solid #D9D9DD;   
+	background-color: #f4f4f4;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rsDefault .rsTab.rsNavSelected { 
+	color: #FFF;
+	border: 1px solid #999;
+	text-shadow: 1px 1px #838383;
+	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+	background: #ACACAC;
+	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsDefault .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.rsDefault .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('../images/rs-defau.png') 0 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	border-radius: 2px;
+
+}
+.rsDefault .rsFullscreenIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+.rsDefault.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+
+.rsDefault .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+.rsDefault .rsCloseVideoBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.rsDefault .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.rsDefault .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/rs-defau.png) -64px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	
+}
+.rsDefault .rsCloseVideoIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsDefault .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../pic/preloade.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsDefault .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+.leaders-slider {
+  width:1040px;
+	height:455px;
+	background:#fff;
+	position:relative;
+	margin:0 -30px 61px -30px;
+}
+
+.leaders-slider:after {
+  content:"";
+	position:absolute;
+	width:100%;
+	height:61px;
+	background:url(../images/leaders-shadow.png) center 0 no-repeat;
+	bottom:-61px;
+	left:0;
+}
+
+#content-slider-1.royalSlider {
+  direction: ltr;
+	width: 1040px;
+	height: 351px;
+	position: relative;
+	top:0 !important;
+}
+#content-slider-1 .rsVideoContainer {
+	width: 625px;
+	height:351px;
+	overflow:hidden;
+	float: right;
+}
+#content-slider-2 .rsVideoContainer {width:472px !important; height:266px}
+#content-slider-1 .rsOverflow {
+    height: 342px !important;
+	//top:48px;
+	//left:1px;
+}
+#content-slider-2 .rsOverflow {
+    height: 266px !important;
+}
+#content-slider-1 .rsVideoFrameHolder.rsVideoActive {
+    height: 351px !important;
+}
+#content-slider-2 .rsVideoFrameHolder.rsVideoActive {
+    height: 266px !important;
+}
+#content-slider-1.rsDefault .rsThumbsHor {
+    height: 104px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 960px;
+		margin-top:0 !important;
+		padding:0 40px 0 40px;
+		background:#fef7db;
+}
+#content-slider-2.rsDefault .rsThumbsHor {
+	display:none;
+}
+#content-slider-1 img.rsImg {
+  width: 625px;
+	height: 351px;
+}
+#content-slider-2 img.rsImg {
+   width:472px;
+   height:354px;
+   top:50%;
+   margin-top:-177px;
+   position:absolute;
+   left:0;
+}
+#content-slider-1 .vTitle {
+	color:#313946;
+	font:13px/20px 'gotham_proregular';
+	border-bottom:2px solid #f5c116;
+	//border-bottom:0;
+	display:inline;
+	padding:0 0 2px;
+	overflow:hidden;
+}
+#content-slider-1 .vTitle .vTitleWord {
+	padding:5px 0;
+}
+#content-slider-1 .rsNavSelected .vTitle .vTitleWord {
+	color:#fff;
+	background:#f5c113;
+	display:inline-block;
+	padding:6px 5px;
+	float:left;
+	margin-right:-5px;
+	font-weight:700;
+	line-height:0.7em;
+	border-bottom:2px solid #f5c116;
+}
+#content-slider-1.rsDefault .rsThumbsArrow {
+	width:40px;
+	height:104px;
+	background:none;
+	position:absolute;
+	top:0;
+}
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft {
+	background:url(../images/leaders-arrows.png) 0 0 no-repeat;
+}
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft:hover {
+	background-position:0 -104px;
+}
+
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowRight {
+	background:url(../images/leaders-arrows.png) -40px 0 no-repeat;
+}
+
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowRight:hover {
+	background:url(../images/leaders-arrows.png) -40px -104px no-repeat;
+}
+
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+	
+}
+#content-slider-1.rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
+	
+}
+#content-slider-1.rsDefault .rsThumbsArrowDisabled .rsThumbsArrowIcn {
+	
+}
+#content-slider-1.rsDefault .rsPlayBtn,
+#content-slider-2.rsDefault .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:105px;
+	height:105px;
+	margin-left:-52px;
+	margin-top:-52px;
+	cursor: pointer;
+}
+#content-slider-1.rsDefault .rsPlayBtnIcon,
+#content-slider-2.rsDefault .rsPlayBtnIcon {
+	width:105px;
+	display:block;
+	height:105px;
+	/* -webkit-border-radius: 50%; */
+	/* border-radius: 50%; */
+
+
+	background:url(../images/play-2.png) 0 0 no-repeat;
+}
+#content-slider-1.rsDefault .rsPlayBtn:hover .rsPlayBtnIcon,
+#content-slider-2.rsDefault .rsPlayBtn:hover .rsPlayBtnIcon {
+	/* background-position:0 -92px; */
+}
+
+#content-slider-1 .vidCaption {
+  width:415px;
+	float:left;
+}
+
+#content-slider-1 .vidText {
+  font-size:13px;
+	line-height:20px;
+	color:#484d58;
+	padding:45px 49px 36px 49px;
+}
+
+#content-slider-1 .vidTextTitle {
+  font-family:'gotham_probold';
+	font-size:24px;
+	line-height:30px;
+	margin:0 0 6px 0;
+	text-transform:uppercase;
+}
+
+#content-slider-1 .spPhotoBg {
+  width: 96px;
+	height: 72px;
+	background: url(../images/video-userpic-bg.png) 0 0 no-repeat;
+	text-align: center;
+	font-size: 0;
+	float: left;
+	margin: 0 7px 0 0;
+}
+
+#content-slider-1 .spPhotoBg img {
+  margin:10px 0 0 0;
+}
+
+#content-slider-1 .vidSpeaker {
+  padding:0 49px 0 28px;
+}
+
+#content-slider-1 .vidSpeakerText {
+	overflow:hidden;
+	padding:7px 0 0 0;
+}
+
+#content-slider-1 .vidSpeakerName {
+  color: #303847;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	font-family: 'gotham_probold';
+	margin: 0 0 9px 0;
+	letter-spacing: .2em;
+}
+
+#content-slider-1 .vidSpeakerTitle {
+  font-size:11px;
+	line-height:14px;
+	color:#7d8188;
+}
+
+.rsTmb img {
+  width:30px !important;
+	height:30px !important;
+	position:absolute;
+	left:0;
+	top:6px;
+}
+
+.rsNavSelected img {
+  opacity:1 !important;
+  filter:alpha(opacity=100) !important;
+}
+
+.rsNavSelected .thumbTitle {
+  background: #ffcc00;
+	box-shadow: -5px 0 0 0 #ffcc00,5px 0 0 #ffcc00;
+	padding: 2px 0;
+}

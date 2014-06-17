@@ -1,0 +1,130 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;opacity:.9 !important;}
+#colorbox{
+	outline:0;
+	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.29);
+	-moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.29);
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.29);
+}
+    #cboxContent{padding:40px; overflow:visible; background:#fff;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#fff; padding:1px;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#fff;}
+        #cboxTitle{position:absolute; top:15px; left:35px; color:#000;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:40px; height:40px; position:absolute; top:15px;}
+        
+				
+				
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxPrevious{
+					left:0;
+					bottom:0;
+					top:auto;
+					text-indent:0;
+					width:auto;
+					background:none;
+					padding:0 0 0 55px;
+					outline:none;
+					letter-spacing:.05em;
+				}
+				
+				#cboxPrevious:after {
+					content:"";
+					width:40px;
+					height:40px;
+					background:url(../images/colorbox-nav.png) 0 0 no-repeat;
+					position:absolute;
+					left:0;
+					top:0;
+				}
+				
+				#cboxPrevious:hover:after {
+					background-position:0 -40px;
+				}
+				
+        #cboxPrevious:hover{
+					
+				}
+				
+				#cboxNext{
+					right:0;
+					bottom:0;
+					top:auto;
+					text-indent:0;
+					width:auto;
+					background:none;
+					padding:0 55px 0 0;
+					outline:none;
+					letter-spacing:.05em;
+				}
+				
+				#cboxNext:after {
+					content:"";
+					width:40px;
+					height:40px;
+					background:url(../images/colorbox-nav.png) -40px 0 no-repeat;
+					position:absolute;
+					right:0;
+					top:0;
+				}
+				
+				#cboxNext:hover:after {
+					background-position:-40px -40px;
+				}
+				
+        #cboxNext:hover{
+					
+				}
+				
+				#cboxPrevious span,
+				#cboxNext span {
+					color:#303847;
+					font-family:'gotham_promedium';
+					border-bottom:1px solid #cbcdd1;
+					text-transform:uppercase;
+					font-size:10px;
+				}
+        
+        
+        #cboxClose{
+					right:0;
+					top:0;
+					background:url(../images/colorbox-close.png) 0 0 no-repeat;
+				}
+				
+        #cboxClose:hover{
+					background-position:0 -40px;
+				}
+				
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
