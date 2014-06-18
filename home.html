@@ -44,7 +44,6 @@
 <div class="top-wrap">
 
   <div class="top-main">
-    
 		
 		<div class="fixed-menu-h clearfix">
 			
@@ -65,7 +64,7 @@
 							<a href="#" class="lang-sel">Eng</a>
 							<div class="menu-icons clearfix">
 								<div class="soclinks-trigger"></div>
-								<a href="#" class="mailing-link"></a>
+								<a href="#mailingPopup" class="mailing-link"></a>
 								<div class="soclinks">
 									<div class="clearfix">
 										<a href="#" class="link-fb"></a>
@@ -111,7 +110,7 @@
 				<a href="#" class="link-instagram"></a>
 				<a href="#" class="link-youtube"></a>
 			</div>
-			<a href="#" class="mailing-link">
+			<a href="#mailingPopup" class="mailing-link">
 				Я хочу получать рассылку
 			</a>
 		</div>
@@ -131,8 +130,8 @@
 					<div class="header-phone">
 						+7 (495) 225-73-21
 					</div>
-					<a href="#" class="header-button header-button-1">Зарегистрироваться</a>
-					<a href="#" class="header-button header-button-2">Купить билет</a>
+					<a href="#registerPopup" class="header-button header-button-1 inlineBox cboxElement register-popup-button">Зарегистрироваться</a>
+					<a href="#ticketPopup" class="header-button header-button-2 ticket-popup-button">Купить билет</a>
 				</div>
 			</div>
 		</div>
@@ -146,19 +145,37 @@
           <div class="slide">
             <div class="pic" style="background-image:url(files/main-slide-1.jpg)"></div>
             <div class="descr">
-              <strong>Edutainment:</strong>  Обучение через развлечение
+              <div class="cont"><strong>Ключевое событие</strong> об инвестициях<br />в человеческий капитал и счастье в бизнесе</div>
             </div>
           </div>
           <div class="slide">
             <div class="pic" style="background-image:url(files/main-slide-2.jpg)"></div>
             <div class="descr">
-              <strong>Второй слайд:</strong> какой-нибудь текст
+              <div class="cont"><strong>50 спикеров</strong> со всего мира</div>
             </div>
           </div>
           <div class="slide">
             <div class="pic" style="background-image:url(files/main-slide-3.jpg)"></div>
             <div class="descr">
-              <strong>Третий слайд:</strong> длинный текст, который не помещается в одну строку.
+              <div class="cont"><strong>650 мировых и российских</strong> топ менеджеров</div>
+            </div>
+          </div>
+					<div class="slide">
+            <div class="pic" style="background-image:url(files/main-slide-4.jpg)"></div>
+            <div class="descr">
+              <div class="cont"><strong>Edutainment:</strong>  Обучение через развлечение</div>
+            </div>
+          </div>
+					<div class="slide">
+            <div class="pic" style="background-image:url(files/main-slide-5.jpg)"></div>
+            <div class="descr">
+              <div class="cont"><strong>Сообщество лидеров</strong> со смыслом</div>
+            </div>
+          </div>
+					<div class="slide">
+            <div class="pic" style="background-image:url(files/main-slide-6.jpg)"></div>
+            <div class="descr">
+              <div class="cont"><strong>Изменяем</strong> архитектуру бизнеса</div>
             </div>
           </div>
         </div>
@@ -1022,8 +1039,8 @@
 								<div>участие в проекте</div>
 							</div>
 							<div class="who-buttons clearfix">
-								<a href="#" class="who-button"><span>Заявка на&nbsp;регистрацию</span></a>
-								<a href="#" class="who-button"><span>Купить билет</span></a>
+								<a href="#registerPopup" class="who-button register-popup-button"><span>Заявка на&nbsp;регистрацию</span></a>
+								<a href="#ticketPopup" class="who-button ticket-popup-button"><span>Купить билет</span></a>
 							</div>
 						</div>
 						
@@ -1044,13 +1061,13 @@
 								<div class="speakers-lead-content clearfix">
 									<div class="speakers-lead-l">
 										<div>
-											<a href="#speakerContent" class="inlineBox speakers-button">
+											<a href="#speakerPopup" class="inlineBox speakers-button speakers-popup-button">
 												Стать спикером
 											</a>
 										</div>
 										<div class="amp"></div>
 										<div>
-											<a href="#companyContent" class="inlineBox speakers-button">
+											<a href="#companyPopup" class="inlineBox speakers-button">
 												Рассказать о&nbsp;своей компании
 											</a>
 										</div>
@@ -1782,7 +1799,7 @@
 									<div class="toolshop-price">250 000<span>руб.</span></div>
 								</div>
 								<div class="toolshop-controls-r">
-									<a href="#" class="button-toolshop">Узнать больше</a>
+									<a href="#toolshopPopup" class="button-toolshop">Узнать больше</a>
 								</div>
 							</div>
 						</div>
@@ -2059,7 +2076,7 @@
 					</div>
 					
 					<div class="center">
-						<a href="#" class="button button-4">Заброрировать билет</a>
+						<a href="#ticketPopup" class="button button-4 ticket-popup-button">Забронировать билет</a>
 					</div>
 					
 				</div>
@@ -2086,7 +2103,7 @@
 										<div class="small">прием заявок до</div>
 										<div>15 августа 2014</div>
 									</div>
-									<a href="#" class="button button-small button-5">Подать заявку</a>
+									<a href="#requestPopup" class="button button-small button-5 request-popup-button">Подать заявку</a>
 								</div>
 							</div>
 							<div class="employer-r">
@@ -2262,7 +2279,7 @@
 					<h2 class="block-title">партнеры проекта</h2>
 					
 					<div class="partners-banner">
-						<a class="banner-link" href="#">
+						<a class="banner-link partner-popup-button" href="#partnerPopup">
 							<span class="small">станьте</span>
 							<span class="big">генеральным<br />спонсором</span>
 						</a>
@@ -2303,7 +2320,7 @@
 								</span>
 							</span>
 						</a>
-						<a href="#" class="partner-how-big">
+						<a href="#partnerPopup" class="partner-how-big partner-popup-button">
 							<span class="partner-how-cont">
 								<span class="small">как стать</span>
 								<span class="big">генеральным партнером проекта</span>
@@ -2346,7 +2363,7 @@
 					<h3>Партнеры проекта</h3>
 					
 					<div class="partners-list clearfix">
-						<a href="#" class="partner-how-medium">
+						<a href="#partnerPopup" class="partner-how-medium partner-popup-button">
 							<span class="partner-how-cont">
 								<span class="small">как стать</span>
 								<span class="big">партнером проекта</span>
@@ -2565,7 +2582,7 @@
 					<h3>Информационные партнеры проекта</h3>
 					
 					<div class="partners-list clearfix">
-						<a href="#" class="partner-how-small">
+						<a href="#partnerPopup" class="partner-how-small partner-popup-button">
 							<span class="partner-how-cont">
 								<span class="small">как стать</span>
 								<span class="big">информ. партнером проекта</span>
@@ -2856,7 +2873,7 @@
 								<h3>организационный партнер</h3>
 								<p>Признано лучшим еvent-агентством 2011 и 2012 годов, является лауреатом множества российских и зарубежных премий, в том числе вошло в шорт-листы международных премий UK Event Awards 2011 и Gala Awards.</p>
 								<p>АСС «Подъежики» успешно работает на российском рынке более 11 лет, реализовав за это время более 900 мероприятий по всему миру для ведущих российских и международных компаний.</p>
-								<a href="#" class="button-organizer">Узнать больше</a>
+								<a href="#organizerPopup" class="button-organizer">Узнать больше</a>
 							</div>
 						</div>
 					</div>
@@ -3002,6 +3019,387 @@
 				&copy; Winning the Hearts, 2014. Все права защищены.
 			</div>
 		</div>
+	</div>
+</div>
+
+<!-- Popups -->
+
+<!-- Форма регистрации -->
+
+<div style="display:none;">
+	<div id="registerPopup">
+		<h2>Зарегистрироваться</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="reg_name" id="reg_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="reg_name" id="reg_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="reg_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="reg_email" id="reg_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="reg_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="reg_phone" id="reg_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="reg_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="reg_company" id="reg_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="reg_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="reg_spec" id="reg_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="reg_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="reg_captcha" id="reg_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-1" type="submit" value="Зарегистрироваться">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Форма рассылки -->
+
+<div style="display:none;">
+	<div id="mailingPopup">
+		<h2>я хочу получать рассылку!</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="mail_name" id="mail_name">Ваше имя <span class="mind">*</span></label>
+					<input type="text" class="string" name="mail_name" id="mail_name" value="" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="mail_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="mail_email" id="mail_email" required >
+				</div>
+			</div>
+			
+			<div class="form-footer">
+				<div class="form-hint form-hint-alt"><span class="mind">*</span> Обязательные поля</div>
+				<input class="button button-2" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Форма спикера -->
+
+<div style="display:none;">
+	<div id="speakerPopup">
+		<h2>Стать спикером</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="speaker_name" id="speaker_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="speaker_name" id="speaker_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="speaker_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="speaker_email" id="speaker_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="speaker_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="speaker_phone" id="speaker_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="speaker_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="speaker_company" id="speaker_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="speaker_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="speaker_spec" id="speaker_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="speaker_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="speaker_captcha" id="speaker_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-3" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Форма бронирования -->
+
+<div style="display:none;">
+	<div id="ticketPopup">
+		<h2>Забронировать билет</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="ticket_name" id="ticket_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="ticket_name" id="ticket_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="ticket_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="ticket_email" id="ticket_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="ticket_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="ticket_phone" id="ticket_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="ticket_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="ticket_company" id="ticket_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="ticket_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="ticket_spec" id="ticket_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="ticket_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="ticket_captcha" id="ticket_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-4" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Форма заявки -->
+
+<div style="display:none;">
+	<div id="requestPopup">
+		<h2>Подать заявку</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="request_name" id="request_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="request_name" id="request_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="request_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="request_email" id="request_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="request_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="request_phone" id="request_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="request_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="request_company" id="request_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="request_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="request_spec" id="request_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="request_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="request_captcha" id="request_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-1" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Стать партнером -->
+
+<div style="display:none;">
+	<div id="partnerPopup">
+		<h2>Стать партнером</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="partner_name" id="partner_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="partner_name" id="partner_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="partner_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="partner_email" id="partner_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="partner_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="partner_phone" id="partner_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="partner_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="partner_company" id="partner_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="partner_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="partner_spec" id="partner_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="partner_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="partner_captcha" id="partner_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-4" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Toolshop -->
+
+<div style="display:none;">
+	<div id="toolshopPopup">
+		
+		<h2>выставочное место в галерее Toolshop?</h2>
+		
+		<div class="lead">
+			<p>Евгения Шамис около 20 лет помогает разрабатывать и внедрять проекты устойчивого развития в корпорациях, регионах и городах вместе со своей командой. Евгения Шамис около 20 лет помогает разрабатывать.</p>
+		</div>
+		
+		<p><img src="files/toolshop-popup-pic.jpg"/></p>
+		
+		<p>В дополнение к основной деятельности Евгения сотрудничает с проектами, направленными на развитие регионов и корпораций: TEDxPerm, Региональные экономические форумы, CityCamp (Санкт-Петербург), Шабунинские чтения (Волгоград), программы YBLF, Ярмарка проектов (IREX), Alfa Fellowship, Стипендиальная программа Фонда Потанина, Форум молодых лидеров (AIESEC). Евгения входит в Совет Попечителей по проведению в августе 2012 года в России Международного Конгресса AIESEC (110 стран, 1400 участников).</p>
+		<p>Ее клиенты из разных секторов: Газпромнефть, Роснано, РЖД, МТС, РУСАЛ, Orion-Pharma, Финансовый университет при Правительстве РФ. Евгения проводит стратегические сессии для управленческих команд, выступает как фасилитатор и как коуч, модератор форумов (основной ведущий Форума РусИнноМед по инновациям в медицине). преподает в АНХ при Правительстве РФ (программы BA и MBA).</p>
+		
+	</div>
+</div>
+
+<!-- Организатор -->
+
+<div style="display:none;">
+	<div id="organizerPopup">
+		
+		<div class="clearfix">
+			<div class="organizer-popup-pic">
+				<a href="http://podegiki.ru"><img src="files/logo-podyezhiki-2.png"/></a>
+				<a href="http://podegiki.ru" class="podegiki-button">www.podegiki.ru</a>
+			</div>
+			<div class="organizer-popup-descr">
+				<h2>Кто такие Подъёжики?</h2>
+				<div class="lead">
+					<p>Подъёжики – агентство стратегических событий полного цикла. Мы организовываем события, которые решают бизнес задачи наших клиентов. Мы занимаемся организацией HR event, MICE, event marketing.</p>
+					<p>За 10 лет Подъёжики реализовали более 800 проектов в России и за рубежом.</p>
+				</div>
+				<h3>Чем занимается агентство?</h3>
+				<ul>
+					<li>Комплексное обслуживание крупных корпоративных клиентов, организация всего спектра мероприятий в течение года;</li>
+					<li>Организация крупномасштабных мероприятий.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<h3>Наши клиенты</h3>
+		
+		<div class="clients-list clearfix">
+			<a href="#" class="clients-item">
+				<span class="pic">
+					<img src="files/logo-svyaznoy-s.png" />
+				</span>
+			</a>
+			<a href="#" class="clients-item">
+				<span class="pic">
+					<img src="files/logo-audi-s.png" />
+				</span>
+			</a>
+			<a href="#" class="clients-item">
+				<span class="pic">
+					<img src="files/logo-rolf-s.png" />
+				</span>
+			</a>
+			<a href="#" class="clients-item">
+				<span class="pic">
+					<img src="files/logo-renault-s.png" />
+				</span>
+			</a>
+			<a href="#" class="clients-item">
+				<span class="pic">
+					<img src="files/logo-mvideo-s.png" />
+				</span>
+			</a>
+		</div>
+		
+		<h3>Наши премии</h3>
+		
+		<ul>
+			<li>Премия Ukrainian Event Awards 2013 - номинация «Лучший конгресс/конференция»</li>
+			<li>Лучшее Event-агентство 2012 (по версии АКМР)</li>
+			<li>Премия "Золотой Пазл`2012" - номинация "Лучший Team building проект"</li>
+			<li>Лучшее Event-агентство 2011 (по версии АКМР)</li>
+			<li>«Корпоративное событие года 2011»</li>
+			<li>Шорт-лист премии UK Event Awards 2011</li>
+			<li>Шорт-лист премии Gala Awards</li>
+			<li>1-ое место по результатам обзвона читателей журнала «EVENT.ru»</li>
+		</ul>
+		
 	</div>
 </div>
 

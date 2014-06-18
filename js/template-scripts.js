@@ -88,7 +88,6 @@ $(document).ready(function() {
 	$(".speakers-list .ajaxBox").colorbox({
 		innerWidth:"840px",
 		height:'90%',
-		opacity:0.47,
 		fixed:false,
 		rel: "speakers-item",
 		previous: "<span>предыдущий спикер</span>",
@@ -98,6 +97,98 @@ $(document).ready(function() {
 		},
 		onClosed:function(){
 			$("html,body").css({overflow:"auto"})
+		}
+	});
+	
+	$(".register-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-1 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-1 colorbox-form")
+		}
+	});
+	
+	$(".mailing-link").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-2 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-2 colorbox-form")
+		}
+	});
+	
+	$(".speakers-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-3 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-3 colorbox-form")
+		}
+	});
+	
+	$(".ticket-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-4 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-4 colorbox-form")
+		}
+	});
+	
+	$(".request-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-1 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-1 colorbox-form")
+		}
+	});
+	
+	$(".partner-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-4 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-4 colorbox-form")
+		}
+	});
+	
+	$(".button-organizer").colorbox({
+		innerWidth:"870px",
+		height:"90%",
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-5 colorbox-organizer")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-5 colorbox-organizer")
+		}
+	});
+	
+	$(".button-toolshop").colorbox({
+		innerWidth:"870px",
+		height:"90%",
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-6 colorbox-toolshop")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-6 colorbox-toolshop")
 		}
 	});
 	
