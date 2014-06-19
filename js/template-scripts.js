@@ -13,6 +13,14 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
 
+	var wLocation = window.location.hash;
+	
+	if (wLocation) {
+		if ($(".main-menu a.anchor[href="+wLocation+"]").length) {
+			$(".main-menu a.anchor[href="+wLocation+"]").addClass("act")
+		}
+	}
+
 	fixedMenu();
 
 	// Запуск верхнего слайдера
@@ -370,7 +378,7 @@ $(document).ready(function() {
 			$(this).find("li").eq(link.parents("li").prevAll("li").length).find("a.anchor").addClass("act");
 		});
 		
-		if ($(window).width() >= 1100) {
+		if ($(window).width() >= 1225) {
 			yDiff = 40
 		} else {
 			yDiff = 90
@@ -452,6 +460,8 @@ $(document).ready(function() {
     });
     
   });
+	
+	$(".fancybox").fancybox();
   
 
 });
@@ -658,27 +668,34 @@ jQuery.extend(jQuery.validator.messages, {
 
 function fixedMenu() {
 
-	if ($(window).width() >= 1100) {
+	if ($(window).width() >= 1225) {
 		$(".fixed-menu-v").fadeIn(100);
 		$(".fixed-menu-h").fadeOut(100);
 		$(".header").css({
 			marginTop: 0
-		})
+		});
+		$(".top-wrap,.footer").css({
+			marginLeft:150
+		});
 	} else {
 		$(".fixed-menu-v").fadeOut(100);
 		$(".fixed-menu-h").fadeIn(100);
 		$(".header").css({
 			marginTop: 80
-		})
+		});
+		$(".top-wrap,.footer").css({
+			marginLeft:0
+		});
 	}
 	
   $(".fixed-menu-h .soclinks-trigger").click(function() {
 		$(".fixed-menu-h .soclinks").fadeToggle(100);
+		$(this).toggleClass("trigger-on")
 	});
 	
 	$(document).mouseup(function (e) {
     var container1 = $(".fixed-menu-h .soclinks");
-    var container2 = $(".fixed-menu-h .soclinks-trigger");
+    var container2 = $(".fixed-menu-h .soclinks-trigger").not(".trigger-on");
 
     if (!container1.is(e.target) && !container2.is(e.target) // if the target of the click isn't the container...
         && container1.has(e.target).length === 0 && container2.has(e.target).length === 0) // ... nor a descendant of the container
