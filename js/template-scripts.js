@@ -149,6 +149,17 @@ $(document).ready(function() {
 		}
 	});
 	
+	$(".company-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-3 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-3 colorbox-form")
+		}
+	});
+	
 	$(".ticket-popup-button").colorbox({
 		inline:true, 
 		fixed:false,

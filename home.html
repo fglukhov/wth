@@ -1067,7 +1067,7 @@
 										</div>
 										<div class="amp"></div>
 										<div>
-											<a href="#companyPopup" class="inlineBox speakers-button">
+											<a href="#companyPopup" class="inlineBox speakers-button company-popup-button">
 												Рассказать о&nbsp;своей компании
 											</a>
 										</div>
@@ -3146,6 +3146,65 @@
 				<div class="form-item form-item-fl-small">
 					<label for="speaker_captcha">Введите код <span class="mind">*</span></label>
 					<input type="text" class="string" value="" name="speaker_captcha" id="speaker_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-3" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Рассказать о компании -->
+
+<div style="display:none;">
+	<div id="companyPopup">
+		<h2>Рассказать о своей компании</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="company_name" id="company_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="company_name" id="company_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="company_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="company_email" id="company_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="company_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="company_phone" id="company_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="company_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="company_company" id="company_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="company_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="company_spec" id="company_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="company_message">Сообщение</label>
+					<textarea name="company_message" id="company_message" rows="5"></textarea>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="company_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="company_captcha" id="company_captcha" required >
 				</div>
 				<div class="form-item form-item-fl-small">
 					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
