@@ -102,9 +102,17 @@ $(document).ready(function() {
 		next: "<span>следующий спикер</span>",
 		onOpen:function(){
 			$("html,body").css({overflow:"hidden"})
+			$("#colorbox").addClass("colorbox-speaker");
+			
+		},
+		onComplete:function() {
+			$("#colorbox #cboxLoadedContent").css({
+				height:$("#cboxContent").height() - 40
+			})
 		},
 		onClosed:function(){
 			$("html,body").css({overflow:"auto"})
+			$("#colorbox").removeClass("colorbox-speaker")
 		}
 	});
 	
