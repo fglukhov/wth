@@ -549,15 +549,21 @@ $(document).ready(function() {
         listerDescr.hide().fadeIn(250);
       });
       
-      
-      
-      // listerItems.click(function() {
-        // var index = slider.find(".slide[rel='"+$(this).attr("rel")+"']").first().prevAll(".slide").length;
-        // slides.fadeOut(500).removeClass("slide-act");
-        // slides.eq(index).fadeIn(500).addClass("slide-act");
-        // listerItems.removeClass("act");
-        // $(this).addClass("act");
-      // });
+			
+			timer = setInterval( function() {
+				nextBtn.click();
+			}, 4000);
+			
+			// $('.main-slider').hover(
+				// function () {
+					// clearInterval(timer)
+				// },
+				// function () {
+					// timer = setInterval( function() {
+						// nextBtn.click();
+					// }, 5000);
+				// }
+			// );
       
     }
     

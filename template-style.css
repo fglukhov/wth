@@ -412,6 +412,10 @@ a:hover {
 	cursor:pointer;
 }
 
+.main-slider .prev:hover {
+  background-position:0 -66px;
+}
+
 .main-slider .next {
   width:66px;
 	height:66px;
@@ -421,6 +425,10 @@ a:hover {
 	top:50%;
 	margin-top:-33px;
 	cursor:pointer;
+}
+
+.main-slider .next:hover {
+  background-position:-66px -66px;
 }
 
 .main-slider-mask {
@@ -1463,6 +1471,11 @@ a:hover {
 	font-family:'gotham_promedium';
 	text-transform:uppercase;
 	letter-spacing:.1em;
+	-webkit-transition: background-color 0.1s ease;
+	-moz-transition: background-color 0.1s ease;
+	-o-transition: background-color 0.1s ease;
+	-ms-transition: background-color 0.1s ease;
+	transition: background-color 0.1s ease;
 }
 
 .who-button span {
@@ -1472,6 +1485,15 @@ a:hover {
 	text-align:center;
 	vertical-align:middle;
 }
+
+.who-button:hover {
+  background-color:#c5e34b;
+	color:#323c44;
+	margin:-10px;
+	padding:10px 30px;
+}
+
+
 
 /* Спикеры */
 
