@@ -1344,8 +1344,7 @@ a:hover {
 
 .block-who {
   height:700px;
-	background:url(images/who-bg.jpg) center center no-repeat;
-	background-size:cover;
+	background:#000000 url(images/who-bg.jpg) center center no-repeat;
 	font-size:14px;
 	line-height:18px;
 	color:#fff;
@@ -1593,7 +1592,7 @@ a:hover {
 }
 
 .speakers-userpic img {
-  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: url(css/filters.svg#grayscale); /* Firefox 3.5+ */
 	filter: gray; /* IE6-9 */
 	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 	width:173px;
@@ -3622,16 +3621,21 @@ ul.contacts-route li.metro {
 	display:block;
 }
 
-.fixed-menu-v .soclinks {
-  margin:14px -5px 21px 13px;
+.submenu-ttl span {
+  padding:0 25px;
+	display:block;
 }
 
+.fixed-menu-v .soclinks {
+  margin:14px -5px 21px 25px;
+}
+.submenu-ttl.in_soc{padding-left: 25px}
 .fixed-menu-v .soclinks a {
   display: block;
 	float: left;
 	width: 20px;
 	height: 20px;
-	margin: 0 14px 0 0;
+	margin: 0 10px 0 0;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -4647,7 +4651,7 @@ label.error {
 .paginator .nav-btn {
   width:98px;
 }
-
+.paginator .p-btn.act,
 .paginator .p-btn:hover {
   color:#fff;
 	background:#f54e53;
