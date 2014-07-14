@@ -4823,3 +4823,7 @@ label.error {
 .article-gallery img {
   display:block;
 }
+
+.row {
+  clear:left;
+}
