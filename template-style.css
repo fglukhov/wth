@@ -50,7 +50,7 @@ body, html {
   font-size:13px;
   line-height:20px;
   color:#1d1d1d;
-  min-width:1020px;
+  min-width:1060px;
   height:100%;
 	padding:0;
 	margin:0;
@@ -2322,14 +2322,29 @@ a:hover {
   float: left;
 	font-family: 'gotham_probold';
 	color: #323c44;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 20px;
 	padding: 24px 36px 23px 38px;
 	border-left: 1px solid #eaf1f6;
 	margin: 39px 0 0 0;
 	text-transform: uppercase;
-	letter-spacing: .04em;
+	letter-spacing: .02em;
 }
+
+.prices-overall-r {
+	float: left;
+	font-family: 'gotham_probold';
+	color: #323c44;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 24px 36px 23px 38px;
+	width:360px;
+	border-left: 1px solid #eaf1f6;
+	margin: 39px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+}
+
 
 .prices-overall .num {
   font-family: 'gotham_probold';
