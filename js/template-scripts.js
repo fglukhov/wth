@@ -672,7 +672,7 @@ function validateForms() {
 }
 
 jQuery.extend(jQuery.validator.messages, {
-    required: "Заполните поле!",
+    required: "Пожалуйста, заполните это поле!",
     remote: "Please fix this field.",
     email: "Введите правильный e-mail",
     url: "Please enter a valid URL.",
