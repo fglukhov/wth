@@ -13,6 +13,23 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
 
+	// Счетчик
+
+	var curDate = new Date();
+  
+  curDate.setDate(curDate.getDate());
+  
+  var endDate = new Date("November 13, 2014 10:00:00")
+  
+  $(".countdown").each(function() {
+    $(this).countdown({
+      until: endDate,
+      layout : "<div class='cd-section'><div class='cd-num'>{dnn}</div> {dl}</div><div class='cd-section'><div class='cd-num'>{hnn}</div> {hl}</div><div class='cd-section'><div class='cd-num'>{mnn}</div> {ml}</div><div class='cd-section'><div class='cd-num'>{snn}</div> {sl}</div>"
+    });
+  });
+	
+	// Счетчик END
+
 	var wLocation = window.location.hash;
 	
 	if (wLocation) {
@@ -171,6 +188,17 @@ $(document).ready(function() {
 		}
 	});
 	
+	$(".place-popup-button").colorbox({
+		inline:true, 
+		fixed:false,
+		onOpen:function(){
+			$("#colorbox").addClass("colorbox-4 colorbox-form")
+		},
+		onClosed:function(){
+			$("#colorbox").removeClass("colorbox-4 colorbox-form")
+		}
+	});
+	
 	$(".request-popup-button").colorbox({
 		inline:true, 
 		fixed:false,
@@ -206,18 +234,18 @@ $(document).ready(function() {
 		}
 	});
 	
-	$(".button-toolshop").colorbox({
-		innerWidth:"870px",
-		height:"90%",
-		inline:true, 
-		fixed:false,
-		onOpen:function(){
-			$("#colorbox").addClass("colorbox-6 colorbox-toolshop")
-		},
-		onClosed:function(){
-			$("#colorbox").removeClass("colorbox-6 colorbox-toolshop")
-		}
-	});
+	// $(".button-toolshop").colorbox({
+		// innerWidth:"870px",
+		// height:"90%",
+		// inline:true, 
+		// fixed:false,
+		// onOpen:function(){
+			// $("#colorbox").addClass("colorbox-6 colorbox-toolshop")
+		// },
+		// onClosed:function(){
+			// $("#colorbox").removeClass("colorbox-6 colorbox-toolshop")
+		// }
+	// });
 	
 	// Tabbed content
   

@@ -28,6 +28,8 @@
 <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
 <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.colorbox.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
 
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?sensor=false">
@@ -128,10 +130,10 @@
 				</div>
 				<div class="header-r">
 					<div class="header-phone">
-						+7 (495) 225-73-21
+						+7 (495) 225-73-21<br />
+						8 (800) 775-58-91
 					</div>
-					<a href="#registerPopup" class="header-button header-button-1 inlineBox cboxElement register-popup-button">Зарегистрироваться</a>
-					<a href="#ticketPopup" class="header-button header-button-2 ticket-popup-button">Купить билет</a>
+					<a href="#ticketPopup" class="button button-4 button-4-small ticket-popup-button">Купить билет</a>
 				</div>
 			</div>
 		</div>
@@ -190,6 +192,20 @@
         </div>
 				<div class="main-slider-mask"></div>
       </div>
+			
+			<!-- До рефорума осталось -->
+			
+			<div class="block-countdown">
+				<div class="center-wrapper">
+					<div class="block-content clearfix">
+						<div class="block-ttl"><span>до рефорума осталось:</span></div>
+						<div class="countdown-wrapper">
+							<div class="countdown fc"></div>
+						</div>
+						<a href="#ticketPopup" class="button button-4 button-4-alt ticket-popup-button cboxElement">Забронировать место<br />сейчас</a>
+					</div>
+				</div>
+			</div>
 			
 			<!-- Что такое рефорум  -->
 			
@@ -360,153 +376,63 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		
-			<!-- Отзывы -->
-			
-			<div class="block-reviews">
-				<div class="center-wrapper">
-					<h2><span>Отзывы участников</span></h2>
-					
-					<div class="reviews-carousel clearfix">
-						<ul class="jcarousel">
-							<li>
-								<div class="reviews-item">
-									<div class="pic clearfix">
-										<div class="userpic">
-											<img src="files/review-userpic-1.jpg"/>
-										</div>
-										<div class="logo">
-											<img src="files/review-logo-1.png"/>
-										</div>
-									</div>
-									<div class="descr">
-										<div class="review-name">
-											<div class="name">
-												константин Александров
-											</div>
-											<div class="post">
-												директор HR-подразделения Kimberly Clark в Восточной Европе
-											</div>
-										</div>
-										<div class="review-cite">
-											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
-											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="reviews-item">
-									<div class="pic clearfix">
-										<div class="userpic">
-											<img src="files/review-userpic-2.jpg"/>
-										</div>
-										<div class="logo">
-											<img src="files/review-logo-2.png"/>
-										</div>
-									</div>
-									<div class="descr">
-										<div class="review-name">
-											<div class="name">
-												раиса полякова
-											</div>
-											<div class="post">
-												директор по персоналу YUM! Russia &amp; CIS (бренды KFC и Pizza Hut)
-											</div>
-										</div>
-										<div class="review-cite">
-											<h3>Увеличение объемов продаж увеличилось в 2 раза!</h3>
-											<p>С момента внедрения программы «Культура признания» продажи компании увеличились больше чем в 2 раза. Сегодня более 70% наших сотрудников гордятся тем, что являются частью команды YUM!</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="reviews-item">
-									<div class="pic clearfix">
-										<div class="userpic">
-											<img src="files/review-userpic-1.jpg"/>
-										</div>
-										<div class="logo">
-											<img src="files/review-logo-1.png"/>
-										</div>
-									</div>
-									<div class="descr">
-										<div class="review-name">
-											<div class="name">
-												константин Александров
-											</div>
-											<div class="post">
-												директор HR-подразделения Kimberly Clark в Восточной Европе
-											</div>
-										</div>
-										<div class="review-cite">
-											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
-											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="reviews-item">
-									<div class="pic clearfix">
-										<div class="userpic">
-											<img src="files/review-userpic-2.jpg"/>
-										</div>
-										<div class="logo">
-											<img src="files/review-logo-2.png"/>
-										</div>
-									</div>
-									<div class="descr">
-										<div class="review-name">
-											<div class="name">
-												раиса полякова
-											</div>
-											<div class="post">
-												директор по персоналу YUM! Russia &amp; CIS (бренды KFC и Pizza Hut)
-											</div>
-										</div>
-										<div class="review-cite">
-											<h3>Увеличение объемов продаж увеличилось в 2 раза!</h3>
-											<p>С момента внедрения программы «Культура признания» продажи компании увеличились больше чем в 2 раза. Сегодня более 70% наших сотрудников гордятся тем, что являются частью команды YUM!</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="reviews-item">
-									<div class="pic clearfix">
-										<div class="userpic">
-											<img src="files/review-userpic-1.jpg"/>
-										</div>
-										<div class="logo">
-											<img src="files/review-logo-1.png"/>
-										</div>
-									</div>
-									<div class="descr">
-										<div class="review-name">
-											<div class="name">
-												константин Александров
-											</div>
-											<div class="post">
-												директор HR-подразделения Kimberly Clark в Восточной Европе
-											</div>
-										</div>
-										<div class="review-cite">
-											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
-											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
+					<div class="download-presentation">
+						<a href="#" class="button button-3">Скачать презентацию</a>
 					</div>
-					
 				</div>
 			</div>
-		
+			
+			<!-- Для кого -->
+			
+			<div class="block-who">
+				<div class="center-wrapper">
+					<div class="who-content">
+						<div class="who-dots"></div>
+						<div class="who-title clearfix">
+							<div class="title">Для кого</div>
+						</div>
+						<div class="clearfix">
+							<div class="who-l">
+								<h3>
+									<strong>для лидеров,</strong><br />
+									способных повысить<br />
+									вовлеченность<br />
+									сотрудников
+								</h3>
+								<p>Вы знаете, что дествительно нужно ваше компании</p>
+								<p>Вы знаете, в чем ваша компания может стать лучше на рынке</p>
+								<p>Вам известны финансовые показатели бизнеса</p>
+								<p>Вы знаете «слабые места» корпоративно культуры</p>
+								<p>Вам понятно, какие подходы к мотивации сработают наиболее эффективно</p>
+								<p>Вы – носитель ценностеи бренда</p>
+							</div>
+							<div class="who-r">
+								<h3><strong>если вы</strong></h3>
+								<ul>
+									<li>CEO западных и российских компаний</li>
+									<li>Владельцы малого и среднего бизнеса</li>
+									<li>HR-директора</li>
+									<li>T&amp;D-директора</li>
+									<li>Директора по внутренним коммуникациям</li>
+									<li>Директора по маркетингу</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="who-bottom clearfix">
+							<div class="who-btm-text">
+								<div class="small">примите</div>
+								<div>участие в проекте</div>
+							</div>
+							<div class="who-buttons clearfix">
+								<a href="#ticketPopup" class="who-button ticket-popup-button">Купить билет</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
 			<!-- Лидеры о счастье -->
 			
 			<div class="block-leaders">
@@ -992,58 +918,6 @@
 								<p>на новые свершения, общаясь со спикерами и коллегами, разделяющими идею счастливого и результативного бизнеса!</p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		
-			<!-- Для кого -->
-			
-			<div class="block-who">
-				<div class="center-wrapper">
-					<div class="who-content">
-						<div class="who-dots"></div>
-						<div class="who-title clearfix">
-							<div class="title">Для кого</div>
-						</div>
-						<div class="clearfix">
-							<div class="who-l">
-								<h3>
-									<strong>для лидеров,</strong><br />
-									способных повысить<br />
-									вовлеченность<br />
-									сотрудников
-								</h3>
-								<p>Вы знаете, что дествительно нужно ваше компании</p>
-								<p>Вы знаете, в чем ваша компания может стать лучше на рынке</p>
-								<p>Вам известны финансовые показатели бизнеса</p>
-								<p>Вы знаете «слабые места» корпоративно культуры</p>
-								<p>Вам понятно, какие подходы к мотивации сработают наиболее эффективно</p>
-								<p>Вы – носитель ценностеи бренда</p>
-							</div>
-							<div class="who-r">
-								<h3><strong>если вы</strong></h3>
-								<ul>
-									<li>CEO западных и российских компаний</li>
-									<li>Владельцы малого и среднего бизнеса</li>
-									<li>HR-директора</li>
-									<li>T&amp;D-директора</li>
-									<li>Директора по внутренним коммуникациям</li>
-									<li>Директора по маркетингу</li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="who-bottom clearfix">
-							<div class="who-btm-text">
-								<div class="small">примите</div>
-								<div>участие в проекте</div>
-							</div>
-							<div class="who-buttons clearfix">
-								<a href="#registerPopup" class="who-button register-popup-button"><span>Заявка на&nbsp;регистрацию</span></a>
-								<a href="#ticketPopup" class="who-button ticket-popup-button"><span>Купить билет</span></a>
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -1613,7 +1487,7 @@
 											<td class="time time-range">
 												<div class="cont">10:00 -<br />10:15</div>
 											</td>
-											<td class="event-name-narrow event-col-violet">
+											<td class="event-name-narrow event-col-blue">
 												<div class="event-item">
 													<div class="event-time">
 														10:00 - 11:30
@@ -1622,7 +1496,7 @@
 													<p>Раиса Полякова<br /><span class="author-post">— YUM! Restaurants International Russia &amp; CIS, HR директор по России и СНГ</span></p>
 												</div>
 											</td>
-											<td class="event-name-narrow event-col-green">
+											<td class="event-name-narrow event-col-blue">
 												<div class="event-item">
 													<div class="event-time">
 														10:00 - 11:30
@@ -1669,7 +1543,7 @@
 											<td class="time time-range">
 												<div class="cont">10:00 -<br />10:15</div>
 											</td>
-											<td class="event-name-narrow event-col-violet">
+											<td class="event-name-narrow event-col-blue">
 												<div class="event-item">
 													<div class="event-time">
 														10:00 - 11:30
@@ -1678,7 +1552,7 @@
 													<p>Раиса Полякова<br /><span class="author-post">— YUM! Restaurants International Russia &amp; CIS, HR директор по России и СНГ</span></p>
 												</div>
 											</td>
-											<td class="event-name-narrow event-col-green">
+											<td class="event-name-narrow event-col-blue">
 												<div class="event-item">
 													<div class="event-time">
 														10:00 - 11:30
@@ -1754,27 +1628,7 @@
 			<div class="block-prices">
 				<div class="center-wrapper">
 					<a name="prices"></a>
-					<h2 class="block-title">Стоимость и участие</h2>
-					<div class="block-toolshop">
-						<div class="toolshop-l">
-							<img src="files/toolshop-pic.jpg" />
-						</div>
-						<div class="toolshop-r">
-							<div class="toolshop-text">
-								<h2>Хотите место в галерее Toolshop?</h2>
-								<p>Уникальная возможность рассказать о себе с помощью нашего специального предложение для партнеров!</p>
-							</div>
-							<div class="toolshop-controls clearfix">
-								<div class="toolshop-controls-l">
-									<div class="toolshop-price">250 000<span>руб.</span></div>
-								</div>
-								<div class="toolshop-controls-r">
-									<a href="#toolshopPopup" class="button-toolshop">Узнать больше</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
+					<h2 class="block-title">Стоимость участия</h2>
 					<div class="prices-content-wrapper">
 						<div class="prices-content expandable-content">
 							<div class="expandable-inner">
@@ -2045,12 +1899,189 @@
 						</div>
 					</div>
 					
-					<div class="center">
-						<a href="#ticketPopup" class="button button-4 ticket-popup-button">Забронировать билет</a>
+					<!-- До рефорума осталось -->
+			
+					<div class="block-countdown">
+						<div class="block-content clearfix">
+							<div class="block-ttl"><span>до рефорума осталось:</span></div>
+							<div class="countdown-wrapper">
+								<div class="countdown fc"></div>
+							</div>
+							<a href="#ticketPopup" class="button button-4 ticket-popup-button cboxElement">Забронировать билет</a>
+						</div>
+					</div>
+					
+					<h2 class="block-title">Стоимость выставочного места</h2>
+					<div class="block-toolshop">
+						<div class="toolshop-l">
+							<img src="files/toolshop-pic.jpg" />
+						</div>
+						<div class="toolshop-r">
+							<div class="toolshop-text">
+								<h2>Заявите о себе!</h2>
+								<p>Уникальная возможность рассказать о себе с помощью нашего специального предложение для партнеров!</p>
+							</div>
+							<div class="toolshop-controls clearfix">
+								<div class="toolshop-controls-l">
+									<div class="toolshop-price">250 000<span>руб.</span></div>
+								</div>
+								<div class="toolshop-controls-r">
+									<a href="#placePopup" class="button place-popup-button button-4 button-4-toolshop cboxElement">Оставить заявку</a>
+								</div>
+							</div>
+						</div>
 					</div>
 					
 				</div>
 			</div>
+			
+			
+			<!-- Отзывы -->
+			
+			<div class="block-reviews">
+				<div class="center-wrapper">
+					<h2><span>Отзывы участников</span></h2>
+					
+					<div class="reviews-carousel clearfix">
+						<ul class="jcarousel">
+							<li>
+								<div class="reviews-item">
+									<div class="pic clearfix">
+										<div class="userpic">
+											<img src="files/review-userpic-1.jpg"/>
+										</div>
+										<div class="logo">
+											<img src="files/review-logo-1.png"/>
+										</div>
+									</div>
+									<div class="descr">
+										<div class="review-name">
+											<div class="name">
+												константин Александров
+											</div>
+											<div class="post">
+												директор HR-подразделения Kimberly Clark в Восточной Европе
+											</div>
+										</div>
+										<div class="review-cite">
+											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
+											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="reviews-item">
+									<div class="pic clearfix">
+										<div class="userpic">
+											<img src="files/review-userpic-2.jpg"/>
+										</div>
+										<div class="logo">
+											<img src="files/review-logo-2.png"/>
+										</div>
+									</div>
+									<div class="descr">
+										<div class="review-name">
+											<div class="name">
+												раиса полякова
+											</div>
+											<div class="post">
+												директор по персоналу YUM! Russia &amp; CIS (бренды KFC и Pizza Hut)
+											</div>
+										</div>
+										<div class="review-cite">
+											<h3>Увеличение объемов продаж увеличилось в 2 раза!</h3>
+											<p>С момента внедрения программы «Культура признания» продажи компании увеличились больше чем в 2 раза. Сегодня более 70% наших сотрудников гордятся тем, что являются частью команды YUM!</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="reviews-item">
+									<div class="pic clearfix">
+										<div class="userpic">
+											<img src="files/review-userpic-1.jpg"/>
+										</div>
+										<div class="logo">
+											<img src="files/review-logo-1.png"/>
+										</div>
+									</div>
+									<div class="descr">
+										<div class="review-name">
+											<div class="name">
+												константин Александров
+											</div>
+											<div class="post">
+												директор HR-подразделения Kimberly Clark в Восточной Европе
+											</div>
+										</div>
+										<div class="review-cite">
+											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
+											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="reviews-item">
+									<div class="pic clearfix">
+										<div class="userpic">
+											<img src="files/review-userpic-2.jpg"/>
+										</div>
+										<div class="logo">
+											<img src="files/review-logo-2.png"/>
+										</div>
+									</div>
+									<div class="descr">
+										<div class="review-name">
+											<div class="name">
+												раиса полякова
+											</div>
+											<div class="post">
+												директор по персоналу YUM! Russia &amp; CIS (бренды KFC и Pizza Hut)
+											</div>
+										</div>
+										<div class="review-cite">
+											<h3>Увеличение объемов продаж увеличилось в 2 раза!</h3>
+											<p>С момента внедрения программы «Культура признания» продажи компании увеличились больше чем в 2 раза. Сегодня более 70% наших сотрудников гордятся тем, что являются частью команды YUM!</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="reviews-item">
+									<div class="pic clearfix">
+										<div class="userpic">
+											<img src="files/review-userpic-1.jpg"/>
+										</div>
+										<div class="logo">
+											<img src="files/review-logo-1.png"/>
+										</div>
+									</div>
+									<div class="descr">
+										<div class="review-name">
+											<div class="name">
+												константин Александров
+											</div>
+											<div class="post">
+												директор HR-подразделения Kimberly Clark в Восточной Европе
+											</div>
+										</div>
+										<div class="review-cite">
+											<h3>Акционерная стоимость компании за 4 года выросли в 2 раза.</h3>
+											<p>Мы уверены, что прибыль растет вместе с вовлеченностью. Благодаря нашей программе развития вовлеченности компания 3 года подряд входит в ТОП ведущих мировых работодателей, что отразилось и на экономической составляющей.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		
+			
+			
 			
 			<!-- Best employer -->
 			
@@ -2159,95 +2190,12 @@
 				</div>
 			</div>
 			
-			<!-- Пресс-центр -->
-			
-			<div class="block-press">
-				<div class="center-wrapper">
-					<a name="press"></a>
-					<div class="clearfix">
-						<a href="#" class="press-archive-button">Архив новостей</a>
-						<h2 class="block-title">Пресс-центр</h2>
-					</div>
-					<div class="press-list clearfix">
-						<a href="#" class="press-item">
-							<span class="pic">
-								<img src="files/press-tmb-1.jpg"/>
-								<span class="press-badges clearfix">
-									<span class="badge-video"></span>
-								</span>
-							</span>
-							<span class="date">
-								19 июля 2013
-							</span>
-							<span class="title">
-								Счастье как бизнес-модель: возможно ли это в России?
-							</span>
-							<span class="text">
-								<p>Треть жизни каждый из нас проводит на работе...</p>
-							</span>
-						</a>
-						<a href="#" class="press-item">
-							<span class="pic">
-								<img src="files/press-tmb-2.jpg"/>
-								<span class="press-badges clearfix">
-									
-								</span>
-							</span>
-							<span class="date">
-								12 февраля 2014
-							</span>
-							<span class="title">
-								Эпоха осознанного капитализма!
-							</span>
-							<span class="text">
-								<p>Топ-менеджеры обсудили капитализацию счастья.</p>
-							</span>
-						</a>
-						<a href="#" class="press-item">
-							<span class="pic">
-								<img src="files/press-tmb-1.jpg"/>
-								<span class="press-badges clearfix">
-									<span class="badge-photo"></span>
-								</span>
-							</span>
-							<span class="date">
-								9 мая 2014
-							</span>
-							<span class="title">
-								ReForum - как это было. Репортаж от резидентов HSE{INC}
-							</span>
-							<span class="text">
-								<p>На конференции Winning the Hearts собрались люди, которым важно создавать и воспроизводить счастье...</p>
-							</span>
-						</a>
-						<a href="#" class="press-item">
-							<span class="pic">
-								<img src="files/press-tmb-2.jpg"/>
-								<span class="press-badges clearfix">
-									<span class="badge-video"></span>
-									<span class="badge-photo"></span>
-								</span>
-							</span>
-							<span class="date">
-								30 сентября 2014
-							</span>
-							<span class="title">
-								Счастье как бизнес-модель: возможно ли это в России?
-							</span>
-							<span class="text">
-								Треть жизни каждый из нас проводит на работе...
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
-			
 			<!-- Партнеры -->
 			
 			<div class="block-partners">
 				<div class="center-wrapper">
 					<a name="partners"></a>
-					<h2 class="block-title">партнеры проекта</h2>
+					<h2 class="block-title">партнеры</h2>
 					
 					<div class="partners-banner">
 						<a class="banner-link partner-popup-button" href="#partnerPopup">
@@ -2854,6 +2802,91 @@
 				</div>
 			</div>
 			
+			
+			<!-- Пресс-центр -->
+			
+			<div class="block-press">
+				<div class="center-wrapper">
+					<a name="press"></a>
+					<div class="clearfix">
+						<a href="#" class="press-archive-button">Архив новостей</a>
+						<h2 class="block-title">Пресс-центр</h2>
+					</div>
+					<div class="press-list clearfix">
+						<a href="#" class="press-item">
+							<span class="pic">
+								<img src="files/press-tmb-1.jpg"/>
+								<span class="press-badges clearfix">
+									<span class="badge-video"></span>
+								</span>
+							</span>
+							<span class="date">
+								19 июля 2013
+							</span>
+							<span class="title">
+								Счастье как бизнес-модель: возможно ли это в России?
+							</span>
+							<span class="text">
+								<p>Треть жизни каждый из нас проводит на работе...</p>
+							</span>
+						</a>
+						<a href="#" class="press-item">
+							<span class="pic">
+								<img src="files/press-tmb-2.jpg"/>
+								<span class="press-badges clearfix">
+									
+								</span>
+							</span>
+							<span class="date">
+								12 февраля 2014
+							</span>
+							<span class="title">
+								Эпоха осознанного капитализма!
+							</span>
+							<span class="text">
+								<p>Топ-менеджеры обсудили капитализацию счастья.</p>
+							</span>
+						</a>
+						<a href="#" class="press-item">
+							<span class="pic">
+								<img src="files/press-tmb-1.jpg"/>
+								<span class="press-badges clearfix">
+									<span class="badge-photo"></span>
+								</span>
+							</span>
+							<span class="date">
+								9 мая 2014
+							</span>
+							<span class="title">
+								ReForum - как это было. Репортаж от резидентов HSE{INC}
+							</span>
+							<span class="text">
+								<p>На конференции Winning the Hearts собрались люди, которым важно создавать и воспроизводить счастье...</p>
+							</span>
+						</a>
+						<a href="#" class="press-item">
+							<span class="pic">
+								<img src="files/press-tmb-2.jpg"/>
+								<span class="press-badges clearfix">
+									<span class="badge-video"></span>
+									<span class="badge-photo"></span>
+								</span>
+							</span>
+							<span class="date">
+								30 сентября 2014
+							</span>
+							<span class="title">
+								Счастье как бизнес-модель: возможно ли это в России?
+							</span>
+							<span class="text">
+								Треть жизни каждый из нас проводит на работе...
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
 			<!-- Контакты -->
 			<a name="contacts"></a>
 			<div class="block-contacts">
@@ -3240,6 +3273,60 @@
 		</form>
 	</div>
 </div>
+
+<!-- Форма бронирования -->
+
+<div style="display:none;">
+	<div id="placePopup">
+		<h2>Подать заявку на выставочное место</h2>
+		<form class="common-form popup-form" action=".">
+			<div class="row clearfix">
+				<div class="form-item">
+					<label for="place_name" id="place_name">Фамилия, имя, отчество <span class="mind">*</span></label>
+					<input type="text" class="string" name="place_name" id="place_name" value="" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="place_email">Email <span class="mind">*</span></label>
+					<input type="text" class="email" value="" name="place_email" id="place_email" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="place_phone">Телефон <span class="mind">*</span></label>
+					<input type="text" class="string phone" value="" name="place_phone" id="place_phone" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<label for="place_company">Компания <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="place_company" id="place_company" required >
+				</div>
+				<div class="form-item form-item-fl">
+					<label for="place_spec">Должность <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="place_spec" id="place_spec" required >
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="form-item form-item-fl">
+					<div class="form-captcha">
+						<input type="hidden" value="10TfZPiKWSd4C8S32aShNb9JZiDJFqn4" name="yacap_check"><img src="files/captcha.png">
+					</div>
+				</div>
+				<div class="form-item form-item-fl-small">
+					<label for="place_captcha">Введите код <span class="mind">*</span></label>
+					<input type="text" class="string" value="" name="place_captcha" id="place_captcha" required >
+				</div>
+				<div class="form-item form-item-fl-small">
+					<div class="form-hint"><span class="mind">*</span> Обязательные поля</div>
+				</div>
+			</div>
+			<div class="form-footer">
+				<input class="button button-4" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</div>
+
 
 <!-- Форма заявки -->
 
