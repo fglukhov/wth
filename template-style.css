@@ -4929,7 +4929,7 @@ iframe[name="google_conversion_frame"] {
 .block-countdown .block-content {
   border: 2px solid #d7d8da;
 	position: relative;
-	padding: 50px 46px 36px 46px;
+	padding: 45px 46px 41px 46px;
 }
 
 .block-countdown .block-ttl {
@@ -4957,7 +4957,7 @@ iframe[name="google_conversion_frame"] {
 
 .countdown-wrapper {
   position: relative;
-	margin: 0 38px 0 0;
+	margin: 0 20px 0 0;
 	float:left;
 }
 
@@ -4989,7 +4989,7 @@ iframe[name="google_conversion_frame"] {
 }
 
 .cd-section {
-  width:103px;
+  width:130px;
   float:left;
   margin:0 10px 0 10px;
   text-align:center;
@@ -5004,12 +5004,49 @@ iframe[name="google_conversion_frame"] {
   line-height:50px;
   letter-spacing:32px;
   color:#303847;
-  width:104px;
+  width:50px;
   height:68px;
 	background:url(images/cd-num-bg.png);
   padding:9px 0 0 15px;
   text-align:center;
   margin-bottom:2px;
+	float:left;
+}
+
+.cd-units {
+  float:left;
+	line-height:68px;
+	padding:0 0 0 15px;
+	font-family:'gotham_promedium';
+	font-size:16px;
+	line-height:68px;
+	color:#171d21;
+	text-transform:uppercase;
+	float:left;
+}
+
+.countdown-tickets .cd-section {
+  width:345px;
+	margin:0;
+}
+
+.countdown-tickets .cd-num {
+  width:104px;
+}
+
+.countdown-tickets .cd-units {
+  width:200px;
+	line-height:22px;
+	text-align:left;
+	padding:12px 0 0 15px;
+}
+
+.countdown-tickets .cd-units span {
+	color:#ef555b;
+}
+
+.block-countdown .button {
+  float:right;
 }
 
 .button-4-alt {
@@ -5028,4 +5065,110 @@ iframe[name="google_conversion_frame"] {
 .download-presentation {
   text-align: center;
 	margin: -26px 0 17px 0;
+}
+
+#top-link{
+	cursor:pointer; /* изменяем указатель мыши при наведении на блок */
+	display:none; /* скрываем блок с кнопкой, т.к. отображать надо только при прокрутке */
+	position:fixed; /* фиксируем расположение */
+	right:0px;
+	top:0px;
+	padding:0;
+  z-index:5000;
+  width:140px;
+}
+
+
+
+#top-link a,
+#top-link a:hover,
+#top-link a:visited {
+	display: block;
+  font-family: 'gotham_promedium';
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  padding: 50px 0 0 0;
+  background: #f54e53 url(images/top-link-arrow.png) center 28px no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  width: 100px;
+  height: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #fff;
+  margin: 0 0 0 10px;
+	text-transform:uppercase;
+}
+
+.top-link-hidden {
+  display:none !important;
+}
+
+@media (max-width:1500px) {
+  #top-link {
+		display:none !important;
+	}
+}
+
+.participants .jcarousel-container {
+  margin:0 40px;
+}
+
+.participants .jcarousel-clip {
+  overflow:hidden;
+}
+
+.participants .jcarousel-item {
+  width:128px;
+	height:70px;
+	line-height:1px;
+	font-size:1px;
+	text-align:center;
+	background:none;
+	margin:0;
+	padding:0;
+}
+
+.participants .jcarousel-prev {
+  width:30px;
+	height:30px;
+	position:absolute;
+	left:-45px;
+	top:50%;
+	background:url(images/jcar-arrows.png) 0 0 no-repeat;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+.participants .jcarousel-next {
+  width:30px;
+	height:30px;
+	position:absolute;
+	right:-45px;
+	top:50%;
+	background:url(images/jcar-arrows.png) -30px 0 no-repeat;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+.participants .jcarousel-prev:hover,
+.participants .jcarousel-next:hover {
+  opacity:.8;
+}
+
+.block-participants {
+  margin:88px 0 86px 0;
+}
+
+.block-participants h2 {
+  font-family:'gotham_probold';
+	color:#303847;
+	font-size:30px;
+	line-height:32px;
+	letter-spacing:.2em;
+	margin:0 0 35px 0;
 }

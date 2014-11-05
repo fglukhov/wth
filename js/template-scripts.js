@@ -19,14 +19,31 @@ $(document).ready(function() {
   
   curDate.setDate(curDate.getDate());
   
-  var endDate = new Date("November 13, 2014 10:00:00")
+  var endDate = new Date("November 14, 2014 00:00:00")
   
   $(".countdown").each(function() {
     $(this).countdown({
       until: endDate,
-      layout : "<div class='cd-section'><div class='cd-num'>{dnn}</div> {dl}</div><div class='cd-section'><div class='cd-num'>{hnn}</div> {hl}</div><div class='cd-section'><div class='cd-num'>{mnn}</div> {ml}</div><div class='cd-section'><div class='cd-num'>{snn}</div> {sl}</div>"
+      layout : "<div class='cd-section clearfix'><div class='cd-num'>{dn}</div><div class='cd-units'>{dl}</div></div>"
     });
   });
+	
+	
+	
+	var ticketsLeft = (endDate.getDate() - curDate.getDate() + 3)*3;
+	
+	if (ticketsLeft < 12) {
+		ticketsLeft = 12
+	}
+	
+	$(".tickets-left").html(ticketsLeft)
+	
+	// Карусель с логотипами участников
+	
+	$(".participants .jcarousel").jcarousel({
+		wrap: 'circular',
+		scroll: 6
+	});
 	
 	// Счетчик END
 
@@ -757,3 +774,45 @@ function fixedMenu() {
     }
   });
 }
+
+jQuery.extend(jQuery.fn, {
+	toplinkwidth: function(){
+		var totalContentWidth = jQuery('#content').outerWidth(); // ширина блока с контентом, включая padding
+		var totalTopLinkWidth = jQuery(this).children('a').outerWidth(true); // ширина самой кнопки наверх, включая padding и margin
+		var h = jQuery(window).width()/2-totalContentWidth/2-totalTopLinkWidth;
+		if(h<0){
+			// если кнопка не умещается, скрываем её
+			jQuery(this).hide();
+			return false;
+		} else {
+			if(jQuery(window).scrollTop() >= 1){
+				jQuery(this).show();
+			}
+			
+			return true;
+		}
+	}
+});
+
+jQuery(function($){
+	var topLink = $('#top-link');
+	
+  topLink.css({'padding-bottom': $(window).height()});
+	// если вам не нужно, чтобы кнопка подстраивалась под ширину экрана - удалите следующие четыре строчки в коде
+	topLink.toplinkwidth();
+	$(window).resize(function(){
+    topLink.css({'padding-bottom': $(window).height()});
+		topLink.toplinkwidth();
+	});
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 1 && topLink.toplinkwidth()) {
+			topLink.fadeIn(300);
+		} else {
+			topLink.fadeOut(300);
+		}
+	});
+	topLink.click(function(e) {
+		$("body,html").animate({scrollTop: 0}, 500);
+		return false;
+	});
+});
